@@ -101,19 +101,19 @@
   {
     "name": "Frank",
     "race": "Unknown",
-    "strength": "9",
-    "agility": "10",
-    "constitution": "10",
+    "strength": "17",
+    "agility": "14",
+    "constitution": "11",
     "armor": "2",
-    "current_hp": "20"
+    "current_hp": "22"
   },
   {
     "name": "harold",
     "race": "Unknown",
     "strength": "9",
-    "agility": "9",
-    "constitution": "13",
+    "agility": "8",
+    "constitution": "15",
     "armor": "2",
-    "current_hp": "26"
+    "current_hp": "30"
   }
 ]
