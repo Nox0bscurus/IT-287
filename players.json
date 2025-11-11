@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Gorak",
+    "race": "Unknown",
+    "strength": "18",
+    "agility": "12",
+    "constitution": "16",
+    "armor": "5",
+    "current_hp": "10"
+  },
+  {
+    "name": "Elira",
+    "race": "Elf",
+    "strength": "10",
+    "agility": "18",
+    "constitution": "12",
+    "armor": "2",
+    "current_hp": "32"
+  },
+  {
+    "name": "Thorn",
+    "race": "Human",
+    "strength": "14",
+    "agility": "14",
+    "constitution": "14",
+    "armor": "3",
+    "current_hp": "38"
+  },
+  {
+    "name": "Vexa",
+    "race": "Drow",
+    "strength": "12",
+    "agility": "16",
+    "constitution": "11",
+    "armor": "4",
+    "current_hp": "25"
+  },
+  {
+    "name": "Borgak",
+    "race": "Troll",
+    "strength": "20",
+    "agility": "8",
+    "constitution": "19",
+    "armor": "6",
+    "current_hp": "50"
+  },
+  {
+    "name": "Ada",
+    "race": "Unknown",
+    "strength": "13",
+    "agility": "17",
+    "constitution": "16",
+    "armor": "2",
+    "current_hp": "32"
+  },
+  {
+    "name": "Elena",
+    "race": "Unknown",
+    "strength": "9",
+    "agility": "8",
+    "constitution": "17",
+    "armor": "2",
+    "current_hp": "34"
+  },
+  {
+    "name": "Vann",
+    "race": "Unknown",
+    "strength": "13",
+    "agility": "9",
+    "constitution": "17",
+    "armor": "2",
+    "current_hp": "34"
+  },
+  {
+    "name": "Adam",
+    "race": "Unknown",
+    "strength": "10",
+    "agility": "14",
+    "constitution": "8",
+    "armor": "2",
+    "current_hp": "16"
+  },
+  {
+    "name": "d_u_m_a",
+    "race": "Unknown",
+    "strength": "16",
+    "agility": "15",
+    "constitution": "10",
+    "armor": "2",
+    "current_hp": "20"
+  },
+  {
+    "name": "Amara",
+    "race": "Unknown",
+    "strength": "17",
+    "agility": "15",
+    "constitution": "18",
+    "armor": "2",
+    "current_hp": "36"
+  },
+  {
+    "name": "Frank",
+    "race": "Unknown",
+    "strength": "9",
+    "agility": "10",
+    "constitution": "10",
+    "armor": "2",
+    "current_hp": "20"
+  },
+  {
+    "name": "harold",
+    "race": "Unknown",
+    "strength": "9",
+    "agility": "9",
+    "constitution": "13",
+    "armor": "2",
+    "current_hp": "26"
+  }
+]
