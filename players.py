@@ -5,6 +5,8 @@ from rich.prompt import Prompt
 from rich.text import Text
 from rich import print
 
+from config import p, error, warning
+
 console = Console()
 
 class PlayerCharacter:
@@ -54,6 +56,7 @@ class PlayerCharacter:
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 npc_list = json.load(f)
+            p(f"File load complete.")
             
             for npc in npc_list:
                 if npc["name"].lower() == name.lower():
@@ -63,6 +66,7 @@ class PlayerCharacter:
                     self.con = int(npc["constitution"])
                     self.armor = int(npc["armor"])
                     self.current_hp = int(npc["current_hp"])
+                    p(f"{name}, successfully loaded.")
                     return True
                 
             console.print(f"[bold yellow][! WARNING][/bold yellow] NPC '{name}' not found in {file_path}.")
@@ -82,6 +86,8 @@ class PlayerCharacter:
             "armor": str(self.armor),
             "current_hp": str(self.current_hp)
         }
+        warning("Writing to file...")
+        p(f"{self.name}, saved to Memory Card slot 1") # PlayStation 1 hommage
 
         try:
             try:
@@ -104,6 +110,7 @@ class PlayerCharacter:
             with open(file_path, "w", encoding="utf-8") as f:
                 json.dump(npc_list, f, indent=2)
             
+            
             console.print(f"[green]{self.name} saved to {file_path}✅[/green]")
         
         except Exception as e:
@@ -122,10 +129,13 @@ def LoadAllCharacters(file_path="players.json"):
             #pc.str = int(npc["str"])
             pc.load_from_json(name)
             players.append(pc)
+
+        p(f"{npc} loaded from Memory Card slot 1")  
         return players
-            
+
     except Exception as e:
         print(f"[bold red][!] Failed to load JSON: {e}[/bold red]")
+        error(f"Failed to load {npc}")
         return False
 
 
@@ -137,14 +147,14 @@ if __name__ == "__main__":
     frank = PlayerCharacter("Frank")
     frank.save_to_json()
 
-    harold = PlayerCharacter("harold")  
+    harold = PlayerCharacter("Harold")  
     harold.save_to_json()
 
-    harold.load_from_json("harold")
+    harold.load_from_json("Harold")
 
-    gorak = PlayerCharacter("gorak")
+    gorak = PlayerCharacter("Gorak")
     print(f"gorak Rolls: {gorak}")
-    gorak.load_from_json("gorak")
+    gorak.load_from_json("Gorak")
     print(f"gorak Load: {gorak}") 
     gorak.current_hp = 10
 

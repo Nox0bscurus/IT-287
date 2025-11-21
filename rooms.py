@@ -4,12 +4,15 @@ from rich.prompt import Prompt
 from rich.text import Text
 from rich import print
 
+from config import p, error
+
 class RoomObject:
     def __init__(self, title, description, enemies=list):
         self.title = title
         self.description = description
         self.enemies = enemies
-
+        p(f"Now entering: {self.title}....")
+    
     def print_room(self):
         s_width = 120
         print(f"[bold red]{self.title.center(s_width, "-")}[/bold red]")
@@ -32,6 +35,7 @@ class RoomObject:
         return choice
     
     def __str__(self):
+        p(f"Player has entered: {self.title}")
         return f"Room: {self.title}"
 
 if __name__ == "__main__":

@@ -5,10 +5,17 @@ from rich import print
 from players  import PlayerCharacter, LoadAllCharacters
 from rooms import RoomObject
 
-print("[bold green]Welcome to the game![/bold green]")
+from config import p, error
 
+
+print("[bold green]Welcome to the game![/bold green]")
+p("Game started.")
+
+
+p("Initializing Characters...")
 player_list = LoadAllCharacters()
 print(f"Character List: \n{player_list}")
+
 
 entryway = RoomObject("Entryway", "You see big doors")
 print(f"{entryway}")
